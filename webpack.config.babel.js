@@ -4,16 +4,16 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 let devConfig = {
     context: path.join(__dirname, 'app'),
     entry: [
-        './app.js'
+        './routes.js'
     ],
     output: {
         path: path.join(__dirname, 'build/assets/js'),
         publicPath: 'assets/js/',
-        filename: 'app.js',
+        filename: 'routes.js',
     },
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: 'public',
+        contentBase: 'main',
         historyApiFallback: false
     },
     module: {
@@ -42,9 +42,9 @@ let devConfig = {
     },
     plugins: [
         new CopyWebpackPlugin([
-            { 
-                from: '../public', 
-                to: '/build' 
+            {
+                from: '../app',
+                to: '/build'
             }
         ])
     ]
