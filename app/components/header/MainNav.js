@@ -1,6 +1,4 @@
-import React, {Component, PropTypes} from 'react';
-import {Link} from 'react-router';
-import style from './header.scss';
+import React, {Component} from 'react';
 import img from './../../images/logo.png';
 
 export default class MainNav extends Component {

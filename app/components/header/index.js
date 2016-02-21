@@ -1,7 +1,5 @@
-import React, {Component, PropTypes} from 'react';
-import {Link} from 'react-router';
+import React, {Component} from 'react';
 import style from './header.scss';
-import img from './../../images/logo.png';
 import MainNav from './MainNav';
 
 export default class Header extends Component {
