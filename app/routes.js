@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, hashHistory} from 'react-router';
-import Main from './components/main/index';
+import Main from './components/main';
 
 ReactDOM.render((
     <Router history={hashHistory}>

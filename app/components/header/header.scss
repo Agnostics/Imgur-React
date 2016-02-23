@@ -11,17 +11,47 @@
         width: 1000px;
         margin: 0 auto;
         position: relative;
-        .header-logo {
-            float: left;
-            margin-right: -10px;
-        }
         .main-nav {
-            i {
-                color: white;
-                font-size: 20px;
-                position: relative;
-                margin-top: 18px;
+            clear: both;
+            .header-logo {
+                float: left;
+                height: 50px;
+                width: 120px;
+                margin-right: -10px;
                 cursor: pointer;
+                &:hover {
+                    background-color: #444442;
+                }
+            }
+            .hamburger {
+                width: 40px;
+                display: inline-block;
+                height: 50px;
+                margin-left: 20px;
+                &:hover {
+                    background-color: #444442;
+                    cursor: pointer;
+                    height: 50px;
+                    width: auto;
+                }
+                i {
+                    color: #eee;
+                    font-size: 20px;
+					margin-top: 18px;
+padding: 0 10px;
+                }
+            }
+            .header-login {
+                float: right;
+                margin-top: 19px;
+                a {
+                    text-decoration: none;
+                    color: #eee;
+                    margin-right: 20px;
+                    font-family: 'Arial', sans-serif;
+                    font-weight: normal;
+                    font-size: 15px;
+                }
             }
         }
     }

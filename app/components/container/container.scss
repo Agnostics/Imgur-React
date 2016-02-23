@@ -1,0 +1,124 @@
+.container {
+    color: white;
+    background: url('./../../images/main-bg.png') top center no-repeat;
+    width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    .center {
+        margin: 0 auto;
+        position: relative;
+        width: 1000px;
+        .sort {
+            text-align: center;
+            font-size: 22px;
+            line-height: 4;
+            .sort-select {
+                border-bottom: 3px solid #00d8ff;
+                cursor: pointer;
+				&:hover{
+					color: #00d8ff;
+				}
+            }
+            .section {
+				display: none;
+
+                hr {
+                    margin-top: -10px;
+                    border: 1px solid #e8e7e6;
+                }
+                .current {
+                    margin-bottom: -27px;
+                    margin-top: -10px;
+                    font-size: 11px;
+                    color: gray;
+                    &:hover {
+                        cursor: default;
+                        background: #eee;
+                    }
+                }
+                border-radius: 12px;
+                color: #333;
+                background: #eee;
+                position: absolute;
+                border: none;
+                margin-left: 253px;
+                margin-top: -87px;
+                padding-top: 15px;
+                text-align: left;
+                width: 186px;
+                font-size: 14px;
+                line-height: 3;
+                .active {
+                    font-size: 22px;
+                    color: #00d8ff !important;
+                    font-weight: bold;
+                    &:hover {
+                        cursor: default;
+                        background: #eee;
+                    }
+                }
+                li {
+                    padding-left: 17px;
+                    &:hover {
+                        background: #e8e7e6;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .sort {
+				display: none;
+                hr {
+                    margin-top: -10px;
+                    border: 1px solid #e8e7e6;
+                }
+                .current {
+                    margin-bottom: -27px;
+                    margin-top: -10px;
+                    font-size: 11px;
+                    color: gray;
+                    &:hover {
+                        cursor: default;
+                        background: #eee;
+                    }
+                }
+                border-radius: 12px;
+                color: #333;
+                background: #eee;
+                position: absolute;
+                border: none;
+                margin-left: 688px;
+                margin-top: -87px;
+                padding-top: 15px;
+                text-align: left;
+                width: 186px;
+                font-size: 14px;
+                line-height: 3;
+                .active {
+                    font-size: 22px;
+                    color: #00d8ff !important;
+                    font-weight: bold;
+                    &:hover {
+                        cursor: default;
+                        background: #eee;
+                    }
+                }
+                li {
+                    padding-left: 17px;
+                    &:hover {
+                        background: #e8e7e6;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .panel-bg {
+            border-radius: 10px;
+            box-shadow: 0 0 11px 1px #111;
+            background-color: #2b2b2b;
+            height: 700px;
+        }
+    }
+}
