@@ -3,11 +3,11 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 let devConfig = {
     context: path.join(__dirname, 'app'),
-    entry: ['./routes.js'],
+    entry: ['./app.js'],
     output: {
         path: path.join(__dirname, 'build/assets/js'),
         publicPath: 'assets/js/',
-        filename: 'routes.js'
+        filename: 'app.js'
     },
     devtool: 'eval-source-map',
     devServer: {

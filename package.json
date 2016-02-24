@@ -12,12 +12,18 @@
   },
   "license": "MIT",
   "dependencies": {
+    "alt": "^0.18.2",
     "babel-plugin-transform-runtime": "^6.5.2",
     "babel-register": "^6.5.2",
     "json-loader": "^0.5.4",
     "lodash": "^4.5.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
+    "react-router-redux": "^4.0.0",
+    "redux": "^3.3.1",
+    "redux-logger": "^2.6.0",
+    "redux-thunk": "^1.0.3",
     "transform-loader": "^0.2.3"
   },
   "devDependencies": {

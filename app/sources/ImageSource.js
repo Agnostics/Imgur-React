@@ -4,16 +4,19 @@ import env from '../../env';
 let rootUrl = 'https://api.imgur.com/3/';
 let id = env.CLIENT_ID;
 
-let api = {
-    get: function(url) {
-        return fetch(rootUrl + url, {
+var ImageSource =  {
+    fetch: function(url) {
+        return fetch(rootUrl + 'gallery/hot/viral', {
             headers: {
                 'Authorization': 'Client-ID ' + id
             }
         }).then((response) => {
-            console.log(response);
-        });
+            return response.json();
+        }).then((json) => {
+			return(json.data);
+		});
     }
 };
 
-export default api;
+
+module.exports = ImageSource;

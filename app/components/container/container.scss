@@ -18,13 +18,25 @@
             .sort-select {
                 border-bottom: 3px solid #00d8ff;
                 cursor: pointer;
-				&:hover{
-					color: #00d8ff;
-				}
+                &:hover {
+                    color: #00d8ff;
+					
+                }
             }
             .section {
-				display: none;
-
+                display: none;
+                border-radius: 12px;
+                color: #333;
+                background: #eee;
+                position: absolute;
+                border: none;
+                margin-left: 253px;
+                margin-top: -87px;
+                padding-top: 15px;
+                text-align: left;
+                width: 186px;
+                font-size: 14px;
+                line-height: 3;
                 hr {
                     margin-top: -10px;
                     border: 1px solid #e8e7e6;
@@ -39,18 +51,6 @@
                         background: #eee;
                     }
                 }
-                border-radius: 12px;
-                color: #333;
-                background: #eee;
-                position: absolute;
-                border: none;
-                margin-left: 253px;
-                margin-top: -87px;
-                padding-top: 15px;
-                text-align: left;
-                width: 186px;
-                font-size: 14px;
-                line-height: 3;
                 .active {
                     font-size: 22px;
                     color: #00d8ff !important;
@@ -69,7 +69,19 @@
                 }
             }
             .sort {
-				display: none;
+                display: none;
+                border-radius: 12px;
+                color: #333;
+                background: #eee;
+                position: absolute;
+                border: none;
+                margin-left: 688px;
+                margin-top: -87px;
+                padding-top: 15px;
+                text-align: left;
+                width: 186px;
+                font-size: 14px;
+                line-height: 3;
                 hr {
                     margin-top: -10px;
                     border: 1px solid #e8e7e6;
@@ -84,18 +96,6 @@
                         background: #eee;
                     }
                 }
-                border-radius: 12px;
-                color: #333;
-                background: #eee;
-                position: absolute;
-                border: none;
-                margin-left: 688px;
-                margin-top: -87px;
-                padding-top: 15px;
-                text-align: left;
-                width: 186px;
-                font-size: 14px;
-                line-height: 3;
                 .active {
                     font-size: 22px;
                     color: #00d8ff !important;
@@ -118,7 +118,32 @@
             border-radius: 10px;
             box-shadow: 0 0 11px 1px #111;
             background-color: #2b2b2b;
-            height: 700px;
+            width: 100%;
+            display: inline-block;
+            .images-group {
+                text-align: center;
+                padding: 21px;
+                div {
+                    background-color: #181817;
+                    border: 2px solid #444442;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    position: relative;
+                    width: 180px;
+                    height: 180px;
+                    line-height: 0;
+                    a {
+                        height: 100%;
+                        width: 100%;
+                        overflow: hidden;
+                        img {
+                            width: 180px;
+                            height: 180px;
+                            line-height: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }

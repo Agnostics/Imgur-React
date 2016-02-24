@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import style from './container.scss';
 import Sorting from './Sorting';
+import Images from './Images';
 
 export default class Container extends Component {
     render() {
@@ -8,7 +9,9 @@ export default class Container extends Component {
             <div className='container'>
                 <div className='center'>
                     <Sorting/>
-                    <div className='panel-bg'></div>
+                    <div className='panel-bg'>
+						<Images fetchImages={this.props.fetchImages} images={this.props.images}/>
+                    </div>
                 </div>
             </div>
         );
