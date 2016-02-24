@@ -11,10 +11,18 @@ class Main extends Component {
         return (
             <div>
                 <Header/>
-                <Container fetchImages={this.props.actions.fetchImages} images={this.props.images}/>
+				{this.content()}
             </div>
         );
     }
+
+	content (){
+		if(this.props.children){
+			return this.props.children;
+		}else{
+			return <Container fetchImages={this.props.actions.fetchImages} images={this.props.images}/>;
+		}
+	}
 }
 
 function mapStateToProps(state) {
