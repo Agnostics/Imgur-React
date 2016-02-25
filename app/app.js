@@ -16,7 +16,7 @@ ReactDOM.render((
 	<Provider store={store}>
 		<Router history={hashHistory}>
 			<Route path="/" component={Main}>
-				<Route path='img/:id' component={ImageView}/>
+				<Route path='img/:id/:obj' component={ImageView}/>
 			</Route>
 
 		</Router>

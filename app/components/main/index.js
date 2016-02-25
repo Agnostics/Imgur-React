@@ -18,7 +18,7 @@ class Main extends Component {
 
 	content (){
 		if(this.props.children){
-			return this.props.children;
+			return <div>{React.cloneElement(this.props.children, { images: this.props.images })}</div>;
 		}else{
 			return <Container fetchImages={this.props.actions.fetchImages} images={this.props.images}/>;
 		}

@@ -10,6 +10,7 @@ export default class Container extends Component {
             <div className='container'>
                 <div className='center'>
                     <Sorting/>
+					{this.props.children}
 					<div className='panel-bg'>
 						<Images fetchImages={this.props.fetchImages} images={this.props.images}/>
 					</div>

@@ -20,7 +20,6 @@
                 cursor: pointer;
                 &:hover {
                     color: #00d8ff;
-					
                 }
             }
             .section {
@@ -144,6 +143,93 @@
                     }
                 }
             }
+        }
+    }
+}
+.image-view {
+    width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    .image-header {
+        padding: 10px 20px;
+        background: rgba(38,38,38,.9);
+        width: 640px;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+        position: relative;
+        z-index: 3;
+        margin-top: 20px;
+        .post-title {
+            h1 {
+                color: #f2f2f2;
+                font-size: 18px;
+                line-height: normal;
+                text-shadow: none;
+                word-wrap: break-word;
+                max-height: 120px;
+                overflow: hidden;
+                font-weight: bold;
+                text-align: left;
+                background: none;
+                background: rgba(38, 38, 38, 0.9);
+            }
+            h2 {
+                color: #B2B2B2;
+                font-size: 12px;
+                line-height: normal;
+                text-shadow: none;
+                word-wrap: break-word;
+                max-height: 120px;
+                overflow: hidden;
+                text-align: left;
+                background: none;
+                background: rgba(38, 38, 38, 0.9);
+            }
+        }
+    }
+    .image-desc {
+        background: #2E2E2E;
+        color: #CCC;
+        padding: 20px;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        max-width: 640px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        text-align: left;
+		box-shadow: 0 4px 4px -2px rgba(0,0,0,.2),0 -4px 4px -2px rgba(0,0,0,.2);
+    }
+	.image-stats{
+		background: #2E2E2E;
+        color: #CCC;
+        padding: 10px;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        max-width: 660px;
+		text-align: center;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+    div {
+        text-align: center;
+        background: #181817;
+        position: relative;
+        max-width: 680px;
+        margin: 0 auto;
+        img {
+            max-width: 680px;
+            display: block;
+            margin: 0 auto;
+			box-shadow: 0 4px 4px -2px rgba(0,0,0,.2),0 -4px 4px -2px rgba(0,0,0,.2);
         }
     }
 }
